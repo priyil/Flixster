@@ -5,6 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFE7D1"
     tools:context=".DetailActivity"
     android:orientation="vertical">
 
@@ -19,18 +20,21 @@
         android:layout_height="wrap_content"
         android:layout_margin="5dp"
         android:layout_marginStart="8dp"
+        android:background="#4B8E8D"
+        android:textColor="#FCFCFC"
         android:fontFamily="monospace"
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textSize="30sp"
+        android:transitionName="title"
         tools:text="Joker" />
 
     <RatingBar
         android:id="@+id/ratingBar"
         style="@style/Widget.AppCompat.RatingBar.Indicator"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="5dp"
+        android:layout_margin="3dp"
         android:isIndicator="true"
         android:numStars="10"
         android:rating="8.5" />
@@ -40,5 +44,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
+        android:background="#F6C89F"
+        android:padding="5dp"
+        android:transitionName="overview"
         tools:text="During the 1980s, a failed stand-up comedian is driven insane and turns to a life of crime and chaos in Gotham City while becoming an infamous psychopathic crime figure." />
 </LinearLayout>
